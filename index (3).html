@@ -1,0 +1,1208 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gabor Gulyas – MBA · Cloud · Nearshore IT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gabor Gulyas – Civil Servant and Business Management Professional with an MBA in International Business (Distinction) and BSc in Cloud Computing (First Class). Research focus on nearshore IT support, public sector operations and digital transformation.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    a { color: #7dd3fc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section { padding: 80px 0; }
+    h1, h2, h3, h4 { letter-spacing: 0.03em; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .section-subtitle {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ===== HEADER & NAV ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(2, 6, 23, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 1.5rem;
+      gap: 1rem;
+    }
+
+    .nav-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+
+    .nav-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: #020617;
+    }
+
+    .nav-title {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+
+    .nav-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .nav-name span { color: #38bdf8; }
+
+    .nav-subtitle {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #9ca3af;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(148,163,184,0.7);
+      border-radius: 999px;
+      padding: 0.25rem 0.6rem;
+      color: #e5e7eb;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: #e5e7eb;
+      padding: 0.1rem 0;
+      transition: color 0.2s ease;
+      border-bottom: none;
+    }
+    .nav-links a:hover { color: #38bdf8; }
+
+    /* ===== LANGUAGE SWITCH ===== */
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .lang-btn {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      padding: 0.15rem 0.6rem;
+      cursor: pointer;
+      background: transparent;
+      color: #e5e7eb;
+      font-size: 0.8rem;
+    }
+
+    .lang-btn:hover { border-color: #38bdf8; }
+
+    /* ===== HERO – dinamikus tech háttér ===== */
+    .hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -25%;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(56,189,248,0.45), transparent 55%),
+        radial-gradient(circle at 85% 0%, rgba(34,197,94,0.35), transparent 55%),
+        radial-gradient(circle at 0% 100%, rgba(59,130,246,0.4), transparent 55%),
+        conic-gradient(from 200deg at 50% 50%, rgba(15,23,42,0.0), rgba(15,23,42,0.7), rgba(15,23,42,0.0));
+      animation: heroGlow 22s ease-in-out infinite alternate;
+      opacity: 0.95;
+      z-index: -2;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(120deg, rgba(15,23,42,0.85), rgba(15,23,42,0.9)),
+        linear-gradient(90deg, rgba(148,163,184,0.13) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(148,163,184,0.12) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+      mix-blend-mode: soft-light;
+      opacity: 0.9;
+      z-index: -1;
+    }
+    @keyframes heroGlow {
+      0% { transform: translate3d(0, 0, 0) scale(1); }
+      50% { transform: translate3d(-4%, -2%, 0) scale(1.08); }
+      100% { transform: translate3d(3%, 4%, 0) scale(1.05); }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.7fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .hero-kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #9ca3af;
+      margin-bottom: 0.7rem;
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 3.8vw, 3.3rem);
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+    }
+    .hero-title span { color: #38bdf8; }
+    .hero-text {
+      font-size: 0.98rem;
+      color: #d1d5db;
+      max-width: 36rem;
+      margin-bottom: 0.8rem;
+    }
+    .hero-sub {
+      font-size: 0.88rem;
+      color: #9ca3af;
+      margin-bottom: 1.3rem;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+    .tag {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      padding: 0.25rem 0.7rem;
+      font-size: 0.75rem;
+      color: #e5e7eb;
+      background: rgba(15,23,42,0.7);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .btn-primary, .btn-outline {
+      border-radius: 999px;
+      padding: 0.6rem 1.3rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #22c55e, #0ea5e9);
+      color: #020617;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #e5e7eb;
+      border-color: #64748b;
+    }
+    .hero-email {
+      font-size: 0.85rem;
+      color: #d1d5db;
+      margin-top: 0.3rem;
+    }
+
+    /* ===== HERO PORTRAIT (premium framed image) ===== */
+    .hero-portrait {
+      position: relative;
+      border-radius: 1.35rem;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      background: rgba(15, 23, 42, 0.75);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+    }
+    .hero-portrait::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-radius: 1.45rem;
+      background: radial-gradient(circle at 20% 15%, rgba(56,189,248,0.35), transparent 45%),
+                  radial-gradient(circle at 85% 20%, rgba(34,197,94,0.25), transparent 50%),
+                  radial-gradient(circle at 50% 110%, rgba(59,130,246,0.25), transparent 55%);
+      filter: blur(10px);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+    .hero-portrait-inner {
+      position: relative;
+      padding: 0.85rem;
+    }
+    .hero-portrait img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1.05rem;
+      object-fit: cover;
+      transform: translateZ(0);
+    }
+    .hero-portrait-caption {
+      position: relative;
+      margin-top: 0.85rem;
+      padding: 0.9rem 1rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      background: rgba(2, 6, 23, 0.55);
+    }
+    .hero-portrait-caption .title {
+      font-weight: 650;
+      font-size: 0.95rem;
+      margin-bottom: 0.15rem;
+    }
+    .hero-portrait-caption .sub {
+      font-size: 0.82rem;
+      color: #9ca3af;
+    }
+    .hero-portrait-divider {
+      border-top: 1px solid rgba(148, 163, 184, 0.35);
+      margin: 0.85rem 0 0.75rem;
+    }
+
+    /* ===== HERO LIST ===== */
+    .hero-card-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 0.82rem;
+      color: #e5e7eb;
+    }
+    .hero-card-list li {
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+    .hero-card-bullet {
+      margin-top: 0.28rem;
+      font-size: 0.6rem;
+      color: #38bdf8;
+    }
+
+    /* ===== Visitor pill ===== */
+    .visitor-pill {
+      margin-top: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(2, 6, 23, 0.55);
+      border-radius: 999px;
+      padding: 0.25rem 0.65rem;
+      color: #cbd5e1;
+      font-size: 0.82rem;
+      width: fit-content;
+    }
+    .visitor-pill strong { color: #e5e7eb; font-weight: 700; }
+
+    /* GRID LAYOUTS */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+    .card {
+      border-radius: 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      padding: 1.2rem 1.3rem;
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .card h3, .card h4 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .muted { color: #9ca3af; font-size: 0.9rem; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #a5b4fc;
+      margin-bottom: 0.35rem;
+    }
+    .project-title { font-weight: 600; margin-bottom: 0.4rem; }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      border-left: 1px solid rgba(148, 163, 184, 0.4);
+      margin-left: 0.5rem;
+      padding-left: 1.25rem;
+    }
+    .timeline-item { margin-bottom: 1.5rem; position: relative; }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.1rem;
+      top: 0.25rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: #38bdf8;
+    }
+    .timeline-date {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9ca3af;
+      margin-bottom: 0.15rem;
+    }
+    .timeline-role { font-weight: 600; font-size: 0.95rem; }
+    .timeline-org { font-size: 0.85rem; color: #e5e7eb; }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+    }
+    .skill-chip {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 0.2rem 0.6rem;
+      color: #cbd5f5;
+    }
+
+    .link-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .link-list li { margin-bottom: 0.35rem; }
+
+    /* CONTACT */
+    .contact-box {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    /* ===== REQUEST MODAL ===== */
+    .req-note { margin-top: 0.6rem; font-size: 0.82rem; color: #9ca3af; }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.68);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 1.2rem;
+    }
+    .modal-backdrop.open { display: flex; }
+
+    .modal {
+      width: 100%;
+      max-width: 640px;
+      border-radius: 1.2rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(15, 23, 42, 0.98);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+      padding: 1.2rem 1.2rem 1rem;
+    }
+    .modal-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .modal-title { font-size: 1.05rem; font-weight: 700; color: #e5e7eb; }
+    .modal-subtitle { font-size: 0.85rem; color: #9ca3af; margin-top: 0.15rem; }
+    .modal-close {
+      background: transparent;
+      border: 1px solid rgba(148,163,184,0.45);
+      color: #e5e7eb;
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    .modal-close:hover { border-color: #38bdf8; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .form-row { display: flex; flex-direction: column; gap: 0.35rem; }
+    label { font-size: 0.8rem; color: #cbd5e1; }
+    input, textarea, select {
+      border-radius: 0.8rem;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      background: rgba(2, 6, 23, 0.65);
+      color: #e5e7eb;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.92rem;
+      outline: none;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    input:focus, textarea:focus, select:focus { border-color: #38bdf8; }
+
+    .form-actions {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 0.9rem;
+      flex-wrap: wrap;
+    }
+    .btn-submit {
+      border-radius: 999px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      background: linear-gradient(135deg, #22c55e, #0ea5e9);
+      color: #020617;
+    }
+    .btn-cancel {
+      border-radius: 999px;
+      padding: 0.55rem 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      cursor: pointer;
+      background: transparent;
+      color: #e5e7eb;
+    }
+    .btn-cancel:hover { border-color: #38bdf8; }
+
+    .privacy {
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+    .status-msg {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      display: none;
+    }
+    .status-msg.show { display: block; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 840px) {
+      .hero-grid, .two-col { grid-template-columns: 1fr; }
+      .hero { padding-top: 2.3rem; padding-bottom: 2.8rem; }
+      section { padding: 60px 0; }
+      .nav { padding-inline: 1rem; }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem 1rem;
+        gap: 0.4rem;
+      }
+      .nav-row { width: 100%; justify-content: space-between; }
+      .nav-left { justify-content: flex-start; }
+      .nav-title { flex: 1; text-align: center; }
+      .nav-toggle { display: block; }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0.65rem;
+        margin-top: 0.4rem;
+      }
+      .nav-links.open { display: flex; }
+
+      .lang-switch {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.2rem;
+        padding-bottom: 0.2rem;
+      }
+
+      .form-grid { grid-template-columns: 1fr; }
+      .form-actions { justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HIDDEN Google Translate element -->
+  <div id="google_translate_element" style="display:none;"></div>
+
+  <header>
+    <div class="nav container">
+      <div class="nav-row">
+        <div class="nav-left">
+          <img src="logo.jpg" alt="Logo" class="nav-logo">
+        </div>
+
+        <div class="nav-title">
+          <div class="nav-name"><span>Gabor Gulyas</span></div>
+          <div class="nav-subtitle">e-portfolio</div>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="lang-switch">
+        <span style="color:#9ca3af;">Lang:</span>
+        <button class="lang-btn" onclick="translatePage('en')">EN</button>
+        <button class="lang-btn" onclick="window.location.href='https://gulyasgabor.hu'; return false;">HU</button>
+        <button class="lang-btn" onclick="translatePage('de')">DE</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-kicker">MBA · Cloud Computing · Nearshore IT</div>
+        <h1 class="hero-title">
+          Hi, I’m <span>Gabor</span> – a civil servant &amp; tech-aware business professional.
+        </h1>
+        <p class="hero-text">
+          I combine an MBA in International Business with a First Class BSc in Cloud Computing
+          and over 20 years of experience, mainly in the public sector. I work at the intersection
+          of community projects, operations, safety, and digital tools.
+        </p>
+        <p class="hero-sub">
+          Research interests: nearshore IT support models, public sector operations,
+          digital transformation, workplace safety, and technology for social impact
+          (for example a VAW prevention mobile app).
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag">MBA (Distinction)</span>
+          <span class="tag">BSc Cloud Computing (First Class)</span>
+          <span class="tag">Public Sector</span>
+          <span class="tag">Nearshore IT</span>
+          <span class="tag">Digital Transformation</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View selected projects</a>
+          <a href="#documents" class="btn-outline">Open my documents</a>
+        </div>
+
+        <div class="hero-email">
+          Email:
+          <a href="mailto:info@gulyasgabor.com">info@gulyasgabor.com</a> ·
+          <a href="mailto:info@gulyasgabor.hu">info@gulyasgabor.hu</a>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: premium portrait + quick highlights (keep your current style) -->
+      <aside>
+        <div class="hero-portrait">
+          <div class="hero-portrait-inner">
+            <!-- Put your new high quality portrait here -->
+            <img src="gabor-portrait.jpg" alt="Gabor Gulyas – portrait">
+
+            <div class="hero-portrait-caption">
+              <div class="title">Research &amp; Professional Profile</div>
+              <div class="sub">London · Public Sector · IT &amp; Business</div>
+
+              <div class="hero-portrait-divider"></div>
+
+              <ul class="hero-card-list">
+                <li><span class="hero-card-bullet">●</span><span>MBA in International Business (Distinction) &amp; BSc in Cloud Computing (First Class).</span></li>
+                <li><span class="hero-card-bullet">●</span><span>Community projects, safety, operations and practical digital tools.</span></li>
+                <li><span class="hero-card-bullet">●</span><span>Academic work: nearshore IT support (UK–CEE) &amp; VAW prevention app concept.</span></li>
+                <li><span class="hero-card-bullet">●</span><span>Exploring future doctoral studies with an applied, real-world focus.</span></li>
+              </ul>
+
+              <div class="visitor-pill">👁️ Usage analytics enabled (privacy-friendly)</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container two-col">
+      <div>
+        <div class="section-subtitle">About</div>
+        <h2>Who I am</h2>
+        <p style="margin-bottom: 1rem;">
+          I am a Civil Servant based in London with over 20 years of professional experience,
+          mainly in the public sector. My day-to-day work includes community projects,
+          workplace safety, logistics, and practical IT/admin support. I enjoy solving real problems,
+          supporting teams, and making complex tasks simpler and safer.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          I completed an <strong>MBA in International Business (Distinction)</strong> and a
+          <strong>BSc in Cloud Computing (First Class)</strong> at the University of Wales
+          Trinity Saint David in London. My academic work includes a business development
+          dissertation on nearshore IT support for UK organisations and an earlier thesis and
+          viva presentation on a mobile application concept to help address Violence Against Women.
+        </p>
+        <p>
+          Today my focus is a combination of <strong>business management, public sector operations,
+          digital tools and safety</strong>. I am interested in how these areas connect inside
+          organisations and how they can be improved step by step, using data, reflection, and
+          practical experience. In the future, I plan to continue this path at doctoral level.
+        </p>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:1rem;">
+          <h3>Profile</h3>
+          <p class="muted">
+            • Name: Gabor Gulyas<br>
+            • Location: London, UK<br>
+            • Current role: Civil Servant (Community projects &amp; operations)<br>
+            • Experience: 20+ years<br>
+            • Languages: Hungarian, English (and some German / Croatian)<br>
+            • BCS registered member
+          </p>
+        </div>
+        <div class="card">
+          <h3>Education &amp; qualifications</h3>
+          <p class="muted">
+            • MBA International Business – Distinction (UWTSD London)<br>
+            • BSc Cloud Computing – First Class (UWTSD London)<br>
+            • Paramedic, NVQ L4 – Pécs, Hungary<br>
+            • ECDL Computing, NVQ L4<br>
+            • A-level: Economics &amp; Agriculture<br>
+            • IOSH Managing Safely (workplace safety and risk)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-subtitle">Selected Projects</div>
+      <h2>Projects &amp; case studies</h2>
+      <p class="muted" style="max-width: 650px; margin-bottom: 1.8rem;">
+        A small selection of academic and practice-based work where I combined business,
+        technology and public sector experience.
+      </p>
+
+      <div class="projects-grid">
+        <article class="card">
+          <div class="project-badge">MBA dissertation</div>
+          <div class="project-title">Nearshore IT Support for UK Organisations</div>
+          <p class="muted">
+            Business development study on how UK SMEs can benefit from nearshore IT teams
+            in Central and Eastern Europe, especially Hungary. The work looks at service
+            levels, communication, culture, and risk from a practical point of view.
+          </p>
+          <div class="project-tags">
+            <span>#InternationalBusiness</span>
+            <span>#NearshoreIT</span>
+            <span>#SMEs</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-badge">BSc research</div>
+          <div class="project-title">Violence Against Women (VAW) Support App</div>
+          <p class="muted">
+            A mobile app concept designed to support individuals at risk of Violence Against
+            Women, focusing on accessible information, emergency pathways, and privacy.
+            Presented in dissertation, viva and research poster formats.
+          </p>
+          <div class="project-tags">
+            <span>#SocialImpact</span>
+            <span>#MobileApp</span>
+            <span>#UX</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-badge">Cloud project</div>
+          <div class="project-title">Cloud Computing in Practice</div>
+          <p class="muted">
+            Undergraduate work on how organisations can adopt cloud services in a safe and
+            effective way, including security, scalability and reliability aspects, and a
+            practical migration concept for a real-world style case.
+          </p>
+          <div class="project-tags">
+            <span>#Cloud</span>
+            <span>#Security</span>
+            <span>#Architecture</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-badge">Business concept</div>
+          <div class="project-title">HungaTech – Nearshore Support Idea</div>
+          <p class="muted">
+            A concept brand and operating model for Level 1–3 IT support delivered from
+            Hungary to UK clients. Developed as a structured business proposal with market
+            analysis, service design and financial outline.
+          </p>
+          <div class="project-tags">
+            <span>#Entrepreneurship</span>
+            <span>#ITSupport</span>
+            <span>#ServiceDesign</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="project-badge">Digital marketing</div>
+          <div class="project-title">Sziget-Baracsi Real Estate Branding</div>
+          <p class="muted">
+            Creation of a small real-estate brand with online adverts, visuals, and property
+            descriptions in Hungary. Focus on clear communication and simple digital tools.
+          </p>
+          <div class="project-tags">
+            <span>#Branding</span>
+            <span>#RealEstate</span>
+            <span>#DigitalMarketing</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container two-col">
+      <div>
+        <div class="section-subtitle">Experience</div>
+        <h2>Work experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">03/2024 – Present</div>
+            <div class="timeline-role">CP Placement Coordinator</div>
+            <div class="timeline-org">HMPPS NPS London · UK</div>
+            <p class="muted">
+              Coordinating Community Payback placements, working with host organisations,
+              managing logistics, safety and basic IT/admin support for supervisors and teams.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">06/2021 – 03/2024</div>
+            <div class="timeline-role">Community Payback Supervisor</div>
+            <div class="timeline-org">HMPPS NPS London · UK</div>
+            <p class="muted">
+              Leading Community Payback teams on site, ensuring safe and compliant delivery,
+              and working closely with local partners and councils.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">05/2020 – 06/2021</div>
+            <div class="timeline-role">Community Payback Supervisor</div>
+            <div class="timeline-org">MTC Novo / London CRC · UK</div>
+            <p class="muted">
+              Supervising groups on unpaid work projects, supporting behaviour change and
+              maintaining strong relationships with host agencies.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">10/2017 – 05/2020</div>
+            <div class="timeline-role">Community Payback Supervisor</div>
+            <div class="timeline-org">Sanctuary / Criminal Justice · UK</div>
+            <p class="muted">
+              Planning and delivering community projects, monitoring attendance,
+              and supporting safe, structured work environments.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">11/2009 – 03/2020</div>
+            <div class="timeline-role">Taxi Driver (self-employed)</div>
+            <div class="timeline-org">Sevenoaks · UK</div>
+            <p class="muted">
+              Self-employed taxi driver, responsible for customer service, time management,
+              local route planning and safe transport.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2006 – 2008</div>
+            <div class="timeline-role">Paramedic · Team Leader · Emergency Nurse</div>
+            <div class="timeline-org">Ambulance &amp; Air Ambulance Service, Emergency Room · Hungary</div>
+            <p class="muted">
+              Multiple emergency care roles including paramedic, air ambulance paramedic,
+              emergency room nurse, and team leader in an ambulance call centre.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2001 – 2002</div>
+            <div class="timeline-role">National Service – Hungarian Army</div>
+            <div class="timeline-org">Hungarian Army · Hungary</div>
+            <p class="muted">
+              Completed national military service, developing resilience, discipline and teamwork.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-subtitle">Skills</div>
+        <h2>Skills overview</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Business &amp; management</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Project coordination</span>
+              <span class="skill-chip">Stakeholder communication</span>
+              <span class="skill-chip">Team leadership</span>
+              <span class="skill-chip">Operational planning</span>
+              <span class="skill-chip">Process improvement</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Technology &amp; data</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Cloud computing basics</span>
+              <span class="skill-chip">IT support concepts</span>
+              <span class="skill-chip">Python &amp; scripting (uni level)</span>
+              <span class="skill-chip">SQL &amp; data handling</span>
+              <span class="skill-chip">Digital tools &amp; dashboards</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Soft skills</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Calm under pressure</span>
+              <span class="skill-chip">Cross-cultural teamwork</span>
+              <span class="skill-chip">Customer focus</span>
+              <span class="skill-chip">Problem solving</span>
+              <span class="skill-chip">Reflective learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS & DOWNLOADS -->
+  <section id="documents">
+    <div class="container two-col">
+      <div>
+        <div class="section-subtitle">Documents</div>
+        <h2>Academic work &amp; downloads</h2>
+        <p class="muted">
+          Selected documents are available on request only. This helps me manage access and share the correct version.
+          If you request access, I will review it and send a download link if approved.
+        </p>
+        <p class="req-note">✅ Downloads are approved manually · ⏳ Links can be time-limited</p>
+
+        <div class="card" style="margin-top:1rem;">
+          <h3>Request a document</h3>
+          <ul class="link-list">
+            <li>📩 <a href="#" onclick="openRequestModal(null); return false;">Open request form</a></li>
+          </ul>
+          <p class="muted" style="margin-top:0.7rem;">
+            Choose the document you need, enter your details, and submit. I will receive an email notification and can send the file to your email if approved.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-subtitle">Online presence</div>
+        <h2>Profiles &amp; portfolio sites</h2>
+        <div class="card">
+          <h3>Websites &amp; professional profiles</h3>
+          <ul class="link-list">
+            <li>🌐 Portfolio (English): <a href="https://gulyasgabor.com" target="_blank">gulyasgabor.com</a></li>
+            <li>🌐 Portfolio (Hungarian): <a href="https://gulyasgabor.hu" target="_blank">gulyasgabor.hu</a></li>
+            <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/gabor-gulyas-bigg/" target="_blank">linkedin.com/in/gabor-gulyas-bigg</a></li>
+            <li>💻 GitHub: <a href="https://github.com/robag23" target="_blank">github.com/robag23</a></li>
+            <li>🛡️ HackTheBox: <span style="font-size:0.9rem;">user: robag23</span></li>
+            <li>📚 HyperionDev Portfolio: <span style="font-size:0.9rem;">portfolio/GG23110011796</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container contact-box">
+      <div class="section-subtitle">Contact</div>
+      <h2>Let’s connect</h2>
+      <p class="muted">
+        If you would like to talk about nearshore IT ideas, digital operations, public sector
+        projects or future study and research, feel free to get in touch.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:info@gulyasgabor.com">info@gulyasgabor.com</a>
+        <a href="mailto:info@gulyasgabor.hu">info@gulyasgabor.hu</a>
+        <a href="https://wa.me/447455444965" target="_blank">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/gabor-gulyas-bigg/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Gábor Gulyás. All rights reserved.
+  </footer>
+
+  <!-- REQUEST MODAL -->
+  <div class="modal-backdrop" id="requestModalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="requestModalTitle">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="requestModalTitle">Request access</div>
+          <div class="modal-subtitle" id="requestModalSubtitle">
+            Choose the document you need, enter your details, then submit. I will receive an email notification and can send the file to your email if approved.
+          </div>
+        </div>
+        <button class="modal-close" type="button" onclick="closeRequestModal()">✕</button>
+      </div>
+
+      <!-- Replace REQUEST_ENDPOINT with your form handler endpoint (Formspree/Getform/Basin etc.) -->
+      <form id="requestForm" method="POST" action="REQUEST_ENDPOINT">
+        <div class="form-row">
+          <label for="requestedItemSelect">Select document</label>
+          <select id="requestedItemSelect" name="requested_item" required>
+            <option value="" selected disabled>Select…</option>
+            <option value="📄 Request CV download">📄 Request CV download</option>
+            <option value="✉️ Request Academic Reference 1">✉️ Request Academic Reference 1</option>
+            <option value="✉️ Request Academic Reference 2">✉️ Request Academic Reference 2</option>
+            <option value="🏢 Request Employer Reference">🏢 Request Employer Reference</option>
+            <option value="🎓 Request access (PDF)">🎓 Request access (PDF)</option>
+            <option value="🎓 Request access to full dissertation (PDF)">🎓 Request access to full dissertation (PDF)</option>
+            <option value="📊 Request access to viva presentation (PDF)">📊 Request access to viva presentation (PDF)</option>
+            <option value="🖼️ Request access to research poster (PDF)">🖼️ Request access to research poster (PDF)</option>
+            <option value="📌 Request PhD research proposal">📌 Request PhD research proposal</option>
+            <option value="📚 Request PhD writing sample">📚 Request PhD writing sample</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="full_name" type="text" required placeholder="Your name">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email (where I should send it if approved)</label>
+            <input id="email" name="email" type="email" required placeholder="name@organisation.com">
+          </div>
+
+          <div class="form-row">
+            <label for="organisation">Organisation / University</label>
+            <input id="organisation" name="organisation" type="text" placeholder="Company / University">
+          </div>
+
+          <div class="form-row">
+            <label for="purpose">Purpose</label>
+            <select id="purpose" name="purpose" required>
+              <option value="" selected disabled>Select…</option>
+              <option>PhD application</option>
+              <option>Job application</option>
+              <option>Research collaboration</option>
+              <option>General review</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row" style="margin-top:0.8rem;">
+          <label for="message">Short message (optional)</label>
+          <textarea id="message" name="message" placeholder="Any context to help me approve the request faster…"></textarea>
+        </div>
+
+        <div class="privacy">
+          By submitting this request, you agree that your details will be used only to respond to your request.
+          If you want your data removed, email me at <a href="mailto:info@gulyasgabor.com">info@gulyasgabor.com</a>.
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-cancel" type="button" onclick="closeRequestModal()">Cancel</button>
+          <button class="btn-submit" type="submit">Send request</button>
+        </div>
+
+        <div class="status-msg" id="statusMsg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Google Translate init
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+
+    // programmatic language change
+    function translatePage(language) {
+      var translateElement = document.querySelector("#google_translate_element select");
+      if (translateElement) {
+        for (var i = 0; i < translateElement.options.length; i++) {
+          if (translateElement.options[i].value.indexOf(language) > -1) {
+            translateElement.selectedIndex = i;
+            translateElement.dispatchEvent(new Event('change'));
+            break;
+          }
+        }
+      }
+    }
+
+    // hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      var navToggle = document.querySelector(".nav-toggle");
+      var navLinks = document.querySelector(".nav-links");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", function () {
+          navLinks.classList.toggle("open");
+        });
+      }
+    });
+
+    // Request Modal logic
+    function openRequestModal(itemName) {
+      var backdrop = document.getElementById("requestModalBackdrop");
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+
+      var select = document.getElementById("requestedItemSelect");
+      if (itemName && select) {
+        select.value = itemName;
+      } else if (select) {
+        select.selectedIndex = 0;
+      }
+
+      document.getElementById("requestModalTitle").textContent = "Request a document";
+    }
+
+    function closeRequestModal() {
+      var backdrop = document.getElementById("requestModalBackdrop");
+      backdrop.classList.remove("open");
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    document.getElementById("requestModalBackdrop").addEventListener("click", function (e) {
+      if (e.target === this) closeRequestModal();
+    });
+
+    // Simple UX message (your form handler will still email you)
+    document.getElementById("requestForm").addEventListener("submit", function () {
+      var msg = document.getElementById("statusMsg");
+      msg.textContent = "Thanks! Your request has been sent. I will review it and respond by email.";
+      msg.classList.add("show");
+      setTimeout(function () { closeRequestModal(); }, 900);
+    });
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Counter.dev analytics (no visible number, background only) -->
+  <script src="https://cdn.counter.dev/script.js"
+          data-id="1dee8ec0-a151-4cda-9bd4-43a3585344d4"
+          data-utcoffset="0"></script>
+
+</body>
+</html>
