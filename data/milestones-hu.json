@@ -1,0 +1,83 @@
+[
+  {
+    "date": "2026-07-21",
+    "year": "2026",
+    "title": "ORCID-regisztráció",
+    "description": "Létrejött a jövőbeli kutatási eredményekhez használható állandó akadémiai azonosítóm.",
+    "status": "completed",
+    "link": "orcid.html",
+    "type": "profile"
+  },
+  {
+    "date": "2026-07-21",
+    "year": "2026",
+    "title": "Google Scholar-profil létrehozása",
+    "description": "Elkészült az akadémiai profilom a későbbi tanulmányok, hivatkozások és kutatási láthatóság támogatására.",
+    "status": "completed",
+    "link": "scholar.html",
+    "type": "profile"
+  },
+  {
+    "date": "2026-07-22",
+    "year": "2026",
+    "title": "Akadémiai portfólió elindítása",
+    "description": "A kutatási érdeklődés, a proposal anyagok és az akadémiai profilok egy online felületre kerültek.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "platform"
+  },
+  {
+    "date": "2026-07-23",
+    "year": "2026",
+    "title": "A Capability-to-Value Model kidolgozása",
+    "description": "Az első konceptuális keretrendszer összekapcsolta az AI-adoptációt, a szervezeti képességeket és a fenntartható üzleti értéket.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "research"
+  },
+  {
+    "date": "2026-07-23",
+    "year": "2026",
+    "title": "Working Paper No. 1 első változata",
+    "description": "A kezdeti konceptuális kézirat túllépett a proposal szakaszon, és önálló working paperré alakult.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "paper"
+  },
+  {
+    "date": "2026-07-24",
+    "year": "2026",
+    "title": "A Kutatói Utam oldal elindítása",
+    "description": "Megkezdődött a doktori és kutatói fejlődés hosszú távú dokumentálása.",
+    "status": "completed",
+    "link": "journal/itt-kezdodott-minden.html",
+    "type": "journal"
+  },
+  {
+    "date": "2026",
+    "year": "2026",
+    "title": "Doktori jelentkezések",
+    "description": "Kiválasztott brit egyetemeken keresem a megfelelő témavezetői illeszkedést és doktori lehetőséget.",
+    "status": "in-progress",
+    "link": "",
+    "type": "doctoral"
+  },
+  {
+    "date": "Jövő",
+    "year": "Jövő",
+    "title": "Első konferencia-előadás",
+    "description": "A kutatás első akadémiai közönség előtti bemutatása.",
+    "status": "planned",
+    "link": "",
+    "type": "conference"
+  },
+  {
+    "date": "Jövő",
+    "year": "Jövő",
+    "title": "Első lektorált publikáció",
+    "description": "Az első publikált és szakmailag lektorált akadémiai hozzájárulás.",
+    "status": "planned",
+    "link": "",
+    "type": "publication"
+  }
+]

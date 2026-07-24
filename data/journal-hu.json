@@ -1,0 +1,86 @@
+[
+  {
+    "id": "001",
+    "date": "2026-07-24",
+    "displayDate": "2026. július 24.",
+    "year": "2026",
+    "title": "Itt kezdődött minden",
+    "excerpt": "Az a pont, amikor már nem csak a következő végzettségben gondolkodtam, hanem tudatos utat kezdtem építeni a kutatás, az oktatás és a saját hozzájárulás felé.",
+    "readTime": "6 perc olvasás",
+    "status": "published",
+    "category": "Kutatói identitás",
+    "tags": [
+      "Személyes reflexió",
+      "Doktori út",
+      "Kutatói identitás"
+    ],
+    "url": "journal/itt-kezdodott-minden.html"
+  },
+  {
+    "id": "002",
+    "date": "2026-08-01",
+    "displayDate": "Előkészítés alatt",
+    "year": "2026",
+    "title": "A kutatási kérdésem megtalálása",
+    "excerpt": "Hogyan került át a hangsúly magáról a mesterséges intelligenciáról azokra a szervezeti képességekre, amelyek meghatározzák, hogy a technológia képes-e tartós értéket teremteni.",
+    "readTime": "",
+    "status": "preparation",
+    "category": "Kutatási fejlődés",
+    "tags": [
+      "AI",
+      "Szervezeti képességek",
+      "Brit KKV-k"
+    ],
+    "url": ""
+  },
+  {
+    "id": "003",
+    "date": "2026-08-15",
+    "displayDate": "Tervezett",
+    "year": "2026",
+    "title": "Az első konceptuális modellem felépítése",
+    "excerpt": "A Capability-to-Value Model kialakulása, valamint az AI-adoptáció, a képességek integrációja és a fenntartható üzleti érték közötti kapcsolatok megfogalmazása.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Koncepcionális fejlődés",
+    "tags": [
+      "Capability-to-Value Model",
+      "Elmélet",
+      "Üzleti érték"
+    ],
+    "url": ""
+  },
+  {
+    "id": "004",
+    "date": "2026-09-01",
+    "displayDate": "Tervezett",
+    "year": "2026",
+    "title": "Az első working paper megírása",
+    "excerpt": "Egy kialakuló ötlet koherens konceptuális tanulmánnyá formálása, miközben olyan akadémiai hangot kerestem, amely továbbra is emberi marad.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Working paperek",
+    "tags": [
+      "Working paper",
+      "Akadémiai írás"
+    ],
+    "url": ""
+  },
+  {
+    "id": "005",
+    "date": "2026-09-15",
+    "displayDate": "Tervezett",
+    "year": "2026",
+    "title": "Az első elutasítás",
+    "excerpt": "Mit tanított egy sikertelen doktori jelentkezés a témavezetői illeszkedésről, a kapacitásról, a kitartásról és az út finomításáról anélkül, hogy feladnám a célt.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Doktori út",
+    "tags": [
+      "PhD-jelentkezés",
+      "Kitartás",
+      "Reflexió"
+    ],
+    "url": ""
+  }
+]

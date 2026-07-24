@@ -1,0 +1,83 @@
+[
+  {
+    "date": "2026-07-21",
+    "year": "2026",
+    "title": "ORCID registered",
+    "description": "A permanent academic identifier was established for future research outputs.",
+    "status": "completed",
+    "link": "orcid.html",
+    "type": "profile"
+  },
+  {
+    "date": "2026-07-21",
+    "year": "2026",
+    "title": "Google Scholar profile created",
+    "description": "An academic profile was prepared for future papers, citations and research visibility.",
+    "status": "completed",
+    "link": "scholar.html",
+    "type": "profile"
+  },
+  {
+    "date": "2026-07-22",
+    "year": "2026",
+    "title": "Academic portfolio launched",
+    "description": "Research interests, proposal materials and academic profiles were brought together online.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "platform"
+  },
+  {
+    "date": "2026-07-23",
+    "year": "2026",
+    "title": "Capability-to-Value Model developed",
+    "description": "The first conceptual framework connected AI adoption, organisational capabilities and sustainable business value.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "research"
+  },
+  {
+    "date": "2026-07-23",
+    "year": "2026",
+    "title": "Working Paper No. 1 drafted",
+    "description": "The initial conceptual manuscript moved beyond proposal stage into a standalone working paper.",
+    "status": "completed",
+    "link": "research.html",
+    "type": "paper"
+  },
+  {
+    "date": "2026-07-24",
+    "year": "2026",
+    "title": "Research Journal opened",
+    "description": "The doctoral and research-development journey began to be documented as a long-term record.",
+    "status": "completed",
+    "link": "journal/this-is-where-it-all-began.html",
+    "type": "journal"
+  },
+  {
+    "date": "2026",
+    "year": "2026",
+    "title": "Doctoral applications",
+    "description": "Supervisor fit and doctoral opportunities are being explored across selected UK universities.",
+    "status": "in-progress",
+    "link": "",
+    "type": "doctoral"
+  },
+  {
+    "date": "Future",
+    "year": "Future",
+    "title": "First conference presentation",
+    "description": "A future milestone to present the research to an academic audience.",
+    "status": "planned",
+    "link": "",
+    "type": "conference"
+  },
+  {
+    "date": "Future",
+    "year": "Future",
+    "title": "First peer-reviewed publication",
+    "description": "A future milestone for the first published academic contribution.",
+    "status": "planned",
+    "link": "",
+    "type": "publication"
+  }
+]
