@@ -1,0 +1,87 @@
+[
+  {
+    "id": "001",
+    "date": "2026-07-24",
+    "displayDate": "24 July 2026",
+    "year": "2026",
+    "title": "This Is Where It All Began",
+    "excerpt": "The moment I stopped thinking only about the next qualification and began building a deliberate path towards research, teaching and contribution.",
+    "readTime": "6 min read",
+    "status": "published",
+    "category": "Research identity",
+    "tags": [
+      "Personal reflection",
+      "PhD journey",
+      "Research identity"
+    ],
+    "url": "journal/this-is-where-it-all-began.html"
+  },
+  {
+    "id": "002",
+    "date": "2026-07-25",
+    "displayDate": "25 July 2026",
+    "year": "2026",
+    "title": "One Question Led to Another",
+    "excerpt": "How my attention moved away from improving AI itself and towards the organisational capabilities that turn technology into practical and sustainable value.",
+    "readTime": "7 min read",
+    "status": "published",
+    "category": "Research insight",
+    "tags": [
+      "AI",
+      "Organisational learning",
+      "Leadership",
+      "UK SMEs"
+    ],
+    "url": "journal/one-question-led-to-another.html"
+  },
+  {
+    "id": "003",
+    "date": "2026-08-15",
+    "displayDate": "Planned",
+    "year": "2026",
+    "title": "Building My First Conceptual Model",
+    "excerpt": "The development of the Capability-to-Value Model and the ideas connecting adoption, capability integration and sustainable business value.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Conceptual development",
+    "tags": [
+      "Capability-to-Value Model",
+      "Theory",
+      "Business value"
+    ],
+    "url": ""
+  },
+  {
+    "id": "004",
+    "date": "2026-09-01",
+    "displayDate": "Planned",
+    "year": "2026",
+    "title": "Writing My First Working Paper",
+    "excerpt": "Turning an emerging idea into a coherent conceptual paper while developing an academic voice that still feels human.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Working papers",
+    "tags": [
+      "Working paper",
+      "Academic writing"
+    ],
+    "url": ""
+  },
+  {
+    "id": "005",
+    "date": "2026-09-15",
+    "displayDate": "Planned",
+    "year": "2026",
+    "title": "The First Rejection",
+    "excerpt": "What an unsuccessful doctoral application taught me about fit, supervisory capacity, resilience and refining the route without abandoning the goal.",
+    "readTime": "",
+    "status": "planned",
+    "category": "Doctoral journey",
+    "tags": [
+      "PhD application",
+      "Resilience",
+      "Reflection"
+    ],
+    "url": ""
+  }
+]
