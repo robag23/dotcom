@@ -1,6 +1,0 @@
-
-const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks'); if(menu)menu.onclick=()=>nav.classList.toggle('open');
-const modal=document.getElementById('detailModal');let cards=[...document.querySelectorAll('.story-card[data-title]')],current=0;
-function openCard(i){current=i;let c=cards[i];document.getElementById('modalSection').textContent=c.dataset.section||'';document.getElementById('modalTitle').textContent=c.dataset.title||'';document.getElementById('modalBody').innerHTML=c.querySelector('.detail').innerHTML;modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
-cards.forEach((c,i)=>c.addEventListener('click',e=>{if(e.target.closest('a'))return;openCard(i)}));
-document.querySelectorAll('[data-close-modal]').forEach(x=>x.onclick=()=>{modal.classList.remove('open');document.body.style.overflow=''});if(document.getElementById('prevModal'))document.getElementById('prevModal').onclick=()=>openCard((current-1+cards.length)%cards.length);if(document.getElementById('nextModal'))document.getElementById('nextModal').onclick=()=>openCard((current+1)%cards.length);document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('open');document.body.style.overflow=''}});
