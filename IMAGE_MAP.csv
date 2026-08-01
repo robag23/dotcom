@@ -1,0 +1,46 @@
+file,page/block,type
+assets/images/visuals/home-current.svg,home-current,unique custom illustration
+assets/images/visuals/home-journey.svg,home-journey,unique custom illustration
+assets/images/visuals/home-publications.svg,home-publications,unique custom illustration
+assets/images/visuals/home-insights.svg,home-insights,unique custom illustration
+assets/images/visuals/home-future.svg,home-future,unique custom illustration
+assets/images/visuals/about-healthcare.svg,about-healthcare,unique custom illustration
+assets/images/visuals/about-business.svg,about-business,unique custom illustration
+assets/images/visuals/about-technology.svg,about-technology,unique custom illustration
+assets/images/visuals/about-civil.svg,about-civil,unique custom illustration
+assets/images/visuals/about-research.svg,about-research,unique custom illustration
+assets/images/visuals/research-why.svg,research-why,unique custom illustration
+assets/images/visuals/research-model.svg,research-model,unique custom illustration
+assets/images/visuals/research-paper.svg,research-paper,unique custom illustration
+assets/images/visuals/research-method.svg,research-method,unique custom illustration
+assets/images/visuals/research-publications.svg,research-publications,unique custom illustration
+assets/images/visuals/research-milestones.svg,research-milestones,unique custom illustration
+assets/images/visuals/insight-begin.svg,insight-begin,unique custom illustration
+assets/images/visuals/insight-final.svg,insight-final,unique custom illustration
+assets/images/visuals/insight-boundaries.svg,insight-boundaries,unique custom illustration
+assets/images/visuals/insight-value.svg,insight-value,unique custom illustration
+assets/images/visuals/insight-curiosity.svg,insight-curiosity,unique custom illustration
+assets/images/visuals/insight-human.svg,insight-human,unique custom illustration
+assets/images/visuals/work-operations.svg,work-operations,unique custom illustration
+assets/images/visuals/work-community.svg,work-community,unique custom illustration
+assets/images/visuals/work-business.svg,work-business,unique custom illustration
+assets/images/visuals/work-digital.svg,work-digital,unique custom illustration
+assets/images/visuals/work-skills.svg,work-skills,unique custom illustration
+assets/images/visuals/work-consulting.svg,work-consulting,unique custom illustration
+assets/images/visuals/contact-connect.svg,contact-connect,unique custom illustration
+assets/images/visuals/contact-location.svg,contact-location,unique custom illustration
+assets/images/own/home-hero.png,hero/own photography,curated own or shared image
+assets/images/own/about-hero.png,hero/own photography,curated own or shared image
+assets/images/own/research-hero.png,hero/own photography,curated own or shared image
+assets/images/own/work-hero.jpg,hero/own photography,curated own or shared image
+assets/images/own/contact-hero.png,hero/own photography,curated own or shared image
+assets/images/own/education-mba.png,hero/own photography,curated own or shared image
+assets/images/own/brand-chip.png,hero/own photography,curated own or shared image
+assets/images/own/future-vision.png,hero/own photography,curated own or shared image
+assets/images/own/natural.jpg,hero/own photography,curated own or shared image
+insights.html / hu/insights.html,New LinkedIn post,assets/images/own/insight-good-enough.jpg,Unique image for 29 July 2026 post
+contact.html / hu/contact.html,Hero,assets/images/own/contact-hero-new.jpg,New personal graduation portrait; previous contact hero removed
+
+contact-business-portrait.png,Contact hero (EN/HU),Business portrait
+education-graduation-black-shirt.jpg,About Education detail (EN/HU),Graduation portrait
+education-graduation-formal.jpg,About Education detail (EN/HU),Graduation portrait
