@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="g" x1="0" x2="1"><stop stop-color="#061923"/><stop offset="1" stop-color="#123847"/></linearGradient>
+ <linearGradient id="road" x1="0" x2="1"><stop stop-color="#eb8c57"/><stop offset="1" stop-color="#55c8e8"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<circle cx="1275" cy="145" r="230" fill="#55c8e8" opacity=".08"/>
+<circle cx="1335" cy="115" r="145" fill="#eb8c57" opacity=".07"/>
+<path d="M160 790 C410 690 475 555 670 510 C900 455 1000 300 1420 165" fill="none" stroke="url(#road)" stroke-width="19" stroke-linecap="round"/>
+<path d="M160 790 C410 690 475 555 670 510 C900 455 1000 300 1420 165" fill="none" stroke="#fff" opacity=".18" stroke-width="3" stroke-dasharray="18 26"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <text x="120" y="150" fill="#eb8c57" font-size="34" font-weight="700" letter-spacing="6">LEARNING IN PUBLIC · EPISODE 5</text>
+ <text x="120" y="285" fill="#f7fbfc" font-size="88" font-weight="800">NOT YET</text>
+ <text x="120" y="385" fill="#55c8e8" font-size="88" font-weight="800">DOESN'T MEAN NEVER.</text>
+ <text x="120" y="485" fill="#b6c9d0" font-size="34">Rejection is feedback. The destination stays.</text>
+ <text x="120" y="545" fill="#b6c9d0" font-size="34">Learn. Improve. Try again.</text>
+ <text x="120" y="820" fill="#f7fbfc" font-size="28">The Gabor Gulyas Platform · From Experience to Evidence</text>
+</g>
+<g transform="translate(1270 610)">
+ <circle cx="0" cy="0" r="92" fill="none" stroke="#55c8e8" stroke-width="7"/>
+ <path d="M-40 0 L-8 34 L56 -45" fill="none" stroke="#eb8c57" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#071a24"/><stop offset="1" stop-color="#10303b"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#b)"/>
+<g fill="none" stroke="#55c8e8" stroke-width="5" opacity=".65">
+<circle cx="330" cy="450" r="125"/><circle cx="800" cy="450" r="125"/><circle cx="1270" cy="450" r="125"/>
+<path d="M455 450 H675 M925 450 H1145"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<text x="330" y="430" fill="#f7fbfc" font-size="44" font-weight="700">EXPERIENCE</text>
+<text x="330" y="485" fill="#eb8c57" font-size="28">learn from practice</text>
+<text x="800" y="430" fill="#f7fbfc" font-size="44" font-weight="700">REFLECTION</text>
+<text x="800" y="485" fill="#eb8c57" font-size="28">ask better questions</text>
+<text x="1270" y="430" fill="#f7fbfc" font-size="44" font-weight="700">EVIDENCE</text>
+<text x="1270" y="485" fill="#eb8c57" font-size="28">test what matters</text>
+<text x="800" y="165" fill="#55c8e8" font-size="34" letter-spacing="8">LEARNING IN PUBLIC</text>
+<text x="800" y="735" fill="#b6c9d0" font-size="30">The journey is part of the work.</text>
+</g>
+</svg>
