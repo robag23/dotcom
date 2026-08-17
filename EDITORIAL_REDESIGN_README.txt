@@ -1,0 +1,1 @@
+Redesigned: Home, Who I Am, Work and Research in EN/HU. Research Journal and Contact intentionally remain card-based. Existing site has no separate education.html; education remains part of the broader personal/academic story for the next pass.

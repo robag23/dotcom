@@ -1,0 +1,10 @@
+Replace only:
+- about.html
+- hu/about.html
+- assets/css/main.css
+
+No index.html is needed for this fix.
+The screenshot with 'Experience became a research direction.' is the About page.
+
+This patch expects this image to already exist:
+assets/images/own/taxi-entrepreneurship-v2.jpg
